@@ -1,5 +1,78 @@
+div.repository-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #fc466b,
+    #3f5efb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div.repository-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  height: 60px;
+  flex: 1;
+
+  input {
+    width: 50%;
+    border: 2px solid #8257e6;
+    border-radius: 4px 0px 0px 4px;
+    padding-left: 10px;
+  }
+
+  textarea:focus,
+  input:focus,
+  button:focus {
+    outline: none;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fc466b;
+    opacity: 1;
+    text-align: center;
+  }
+
+  button {
+    border: 0px;
+    background: #8257e6;
+    width: 10%;
+    border-radius: 0px 4px 4px 0px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #704cc3;
+    }
+    &:active {
+      background-color: #704cc3;
+      outline: none;
+      transform: translateX(-1px);
+      box-shadow: 1px 0px #666;
+    }
+  }
+}
+
 section.repository-list {
   margin: 40px;
+  padding: 20px;
+  border-radius: 14px;
+  border: solid 4px;
+  background: #f6f8fa;
+
+  h1 {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+li.repository-item {
+  border-bottom: solid 1px;
+  padding-bottom: 15px;
 }
 
 h1 {
