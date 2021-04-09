@@ -3,11 +3,8 @@ div.repository-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to right,
-    #fc466b,
-    #3f5efb
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100%;
+  background: linear-gradient(to right, #fc466b, #3f5efb);
 }
 
 div.repository-input {
@@ -19,10 +16,10 @@ div.repository-input {
   flex: 1;
 
   input {
-    width: 50%;
     border: 2px solid #8257e6;
     border-radius: 4px 0px 0px 4px;
     padding-left: 10px;
+    min-width: 50%;
   }
 
   textarea:focus,
@@ -59,13 +56,13 @@ div.repository-input {
 }
 
 section.repository-list {
-  max-width: 70%;
   margin: 40px;
   padding: 20px;
   border-radius: 14px;
   border: solid 4px;
   background: #f6f8fa;
-
+  width: 60%;
+  height: 100%;
   h1 {
     text-align: center;
     padding: 15px;
